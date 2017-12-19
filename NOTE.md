@@ -38,6 +38,15 @@
 //= require bootstrap-sprockets
 ```
 * (Add application/_topbar.html.erb)
+* git commit -m "Add bootstrap for styles"
+* git push origin master
+
+4. Add Task model
+* rails g model Task user_id:integer content:string is_finished:boolean finished_at:datetime
+* (modify the migration file to set the is_finished column default to false)
+* rake db:migrate
+* (set up the relation between User and Task model)
+* (finish index & create actions for Task) - check the commit code!
 
 
 ## Refrence

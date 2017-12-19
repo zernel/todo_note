@@ -1,0 +1,13 @@
+<%= form_for @new_task do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit "Add Task" %>
+<% end %>
+
+<hr />
+
+<div class="list-group">
+  <% @tasks.each do |task| %>
+    <a href="#" class="list-group-item"><%= task.content %></a>
+  <% end %>
+</div>
