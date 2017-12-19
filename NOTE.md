@@ -18,7 +18,29 @@
 * rails g devise:views
 * rails generate devise User
 * rails db:migrate
+* git commit -m "Use devise for user authentication"
+* git push origin master
 
-## Gem Dependnece
+3. Use bootstrap for styles
+* (Add `gem 'bootstrap-sass', '~> 3.3.7'` to Gemfile)
+* bundle install
+* rename to 'app/assets/stylesheets/application.scss', add the following code, then, remove all the *= require_self and *= require_tree . statements from the sass file. Instead, use @import to import Sass files.
+```
+  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+```
+* (Add `gem 'jquery-rails'` to Gemfile)
+* bundle install
+* (Add the following code to 'app/assets/javascripts/application.js')
+```
+//= require jquery
+//= require bootstrap-sprockets
+```
+* (Add application/_topbar.html.erb)
+
+
+## Refrence
 * [Devise](https://github.com/plataformatec/devise)
-
+* [Bootstrap](https://getbootstrap.com/docs/3.3/)
+* [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
