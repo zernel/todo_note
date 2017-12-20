@@ -12,8 +12,8 @@
 
 <hr />
 
-<div class="list-group">
+<div id='tasks-list' class="list-group">
   <% @tasks.each do |task| %>
-    <a href="#" class="list-group-item"><%= task.content %></a>
+    <a href="javascript:void(0);" class="list-group-item task-item <%= "finished" if task.is_finished? %>" data-task-id='<%= task.id %>'><%= task.content %></a>
   <% end %>
 </div>

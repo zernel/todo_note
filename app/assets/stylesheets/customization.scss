@@ -11,3 +11,11 @@
   padding: 30px 50px;
   padding-top: 10px;
 }
+
+#tasks-list {
+  a.task-item.finished {
+    background-color: aliceblue;
+    color: darkgray;
+    text-decoration: line-through;
+  }
+}

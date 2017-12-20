@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: "tasks#index"
 
   resources :tasks, only: [:index, :create] do
-    patch :finish
+    post :finish
   end
 end
