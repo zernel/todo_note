@@ -59,6 +59,8 @@ I'm using this project aim to show my trainee about how to start up a simple Rai
 * (finish index & create actions for Task) - check the commit code!
 
 5. Make the tasks#index as root_url
+6. Improved the styles for the login & register pages
+7. Improved the styles for the new task form
 
 ## Refrence
 * [Devise](https://github.com/plataformatec/devise)
