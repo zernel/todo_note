@@ -58,6 +58,7 @@ I'm using this project aim to show my trainee about how to start up a simple Rai
 * (set up the relation between User and Task model)
 * (finish index & create actions for Task) - check the commit code!
 
+5. Make the tasks#index as root_url
 
 ## Refrence
 * [Devise](https://github.com/plataformatec/devise)
