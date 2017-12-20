@@ -18,7 +18,7 @@ $(function() {
       } else {
         // Send request to finish current task by Ajax
         $.ajax({
-          method: "POST",
+          method: "PATCH",
           url: finishTaskUrl,
           data: {}
         }).done(function(rsp) {
